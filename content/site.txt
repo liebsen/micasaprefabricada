@@ -1,0 +1,65 @@
+Title: Mi Casa Prefabricada
+
+----
+
+Text: Ofrecemos soluciones habitacionales de forma ágil y eficiente.
+
+----
+
+Logo: logo.svg
+
+----
+
+Favicon: logo.svg
+
+----
+
+Themecolor: #ffffff
+
+----
+
+Ogtype: website
+
+----
+
+Ogtitle: Mi Casa Prefabricada
+
+----
+
+Ogdescription: Construimos tu casa
+
+----
+
+Ogimage: share.png
+
+----
+
+Backgroundloader: logo-w.svg
+
+----
+
+Backgroundmenu: camminus-1603707314693-blur.jpg
+
+----
+
+Logoloader: 51d7a89bab326cc7404ab0c7e0f2c3da.jpg
+
+----
+
+Logomenu: logo.svg
+
+----
+
+Themebackground: #19A7CE
+
+----
+
+Styleloader: 
+
+----
+
+Stylemenu: filter: bri
+
+----
+
+Googleanalytics: 

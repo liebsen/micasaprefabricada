@@ -1,0 +1,25 @@
+Title: Servicios
+
+----
+
+Subtitle: Subtítulo servicios
+
+----
+
+Intro: Proyectos de Arquitectura y Direcciones de Obra
+
+----
+
+Text: Desarrollo de proyectos y construcción de Tiny Houses
+
+----
+
+Home: true
+
+----
+
+Header: true
+
+----
+
+Style: 

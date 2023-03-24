@@ -1,0 +1,354 @@
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.spotlight.style1 {
+  min-height: 100vh;
+}
+
+.spotlight:last-child .button-next {
+  display: none;
+}
+
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 10000; 
+  transition: all ease 1.4s;
+}
+
+.loader-background {
+  background-color: #333;
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-image: url(/assets/images/BackgroundLoader.jpg); */
+  -webkit-animation-name: loaderIn;
+  animation-name: loaderIn;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;  
+}
+
+@keyframes loaderIn {
+  0% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.loader-logo {
+  filter: drop-shadow(0 0 2.5rem rgba(0,0,0,0.5));
+  margin: 0;
+}
+
+.loader-container,
+.loader-doodles {
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-logo {
+  opacity: 0;
+}
+
+.loader-container {
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.loader-section {
+  font-size: 1.25rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.loader-doodles {
+  background-size: 25%, 50%, contain;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  min-height: 100%;
+}
+
+.loader-container svg {
+  display: none;
+  flex: 1;
+}
+
+.load-progress {
+    height: 200px;
+}
+
+.load-progress > svg {
+    height: 100%;
+    display: block;
+}
+
+.loader-invisible {
+  opacity:0;
+  pointer-events: none;
+}
+
+.p-align-left p {
+  text-align: left;
+}
+
+/* overlay */
+
+
+.overlay {
+  pointer-events: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.overlay.active {
+  pointer-events: inherit;
+  opacity: 1;
+}
+
+.overlay-content {
+  position: relative;
+  background-color: var(--themebackground);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.overlay-content .close {
+  display: inline-block;
+  position: absolute;
+  top: 2.25rem;
+  right: 2.25rem;
+  min-width: auto;
+}
+
+.overlay-content a {
+  flex: 1;
+  flex-grow: 0;
+  color: var(--themecolor);
+  font-size: 1.75rem;
+  padding: 0.25rem 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px #6665;
+  transition: all 0.25s ease-in-out;
+}
+
+.overlay-content a {
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+}
+
+.overlay-content a:hover {
+  filter: brightness(1.5);
+}
+
+.overlay.animate-appear {
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+.overlay.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: 10;
+  min-height: 7rem;
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.header.scroll {
+  min-height: 2rem;
+  background-color: white;
+}
+
+.header .logo {
+  transition: all 0.25s ease-in-out;
+}
+
+.header.scroll .logo {
+  width: 200px;
+}
+
+.header .align-right {
+  padding-right: 1.25rem;
+}
+
+.header > div {
+  flex:1;
+}
+
+.footer {
+  padding: 1rem;
+  font-size: 0.75rem;
+}
+
+.section {
+  margin-top: 7rem;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.is-clickable {
+  cursor: pointer;
+}
+
+/* some animations */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.delay {
+  animation-delay: 1s;
+}
+
+.slide-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 20rem;
+}
+
+.section-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 20rem;
+}
+
+.section-image h1 {
+  color: white;
+  text-shadow: 0 0 0.25rem rgba(10,10,10,0.75), 0 0 2rem rgba(50,50,50,0.5);
+}
+
+.section-image p {
+  color: white;
+  text-shadow: 0 0 0.15rem rgba(10,10,10,0.75), 0 0 1rem rgba(50,50,50,0.5);
+  font-weight: 500;
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scaleIn {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn;
+}
+
+
+@keyframes scaleOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.scaleOut {
+  -webkit-animation-name: scaleOut;
+  animation-name: scaleOut;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}

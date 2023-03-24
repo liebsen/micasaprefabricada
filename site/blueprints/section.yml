@@ -1,0 +1,35 @@
+title: Section
+pages: true
+files: 
+  fields: true
+    title:
+      label: Title
+      type:  text
+    caption:
+      label: Caption
+      type:  textarea
+fields:
+  title:
+    label: Título
+    type:  text
+  subtitle:
+    label: Subtítulo
+    type:  text
+  image:
+    label: Imagen
+    type:  image
+  intro:
+    label: Intro
+    type:  textarea
+  text:
+    label: Text
+    type:  textarea
+  style:
+    label: Estilo
+    type:  text
+  home:
+    label: Mostrar en Inicio
+    type:  toggle
+  header:
+    label: Mostrar en header
+    type:  toggle

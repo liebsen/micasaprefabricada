@@ -1,0 +1,13 @@
+Title: Email
+
+----
+
+Action: mailto
+
+----
+
+Link: telemagico@gmail.com
+
+----
+
+Icon: fa-envelope

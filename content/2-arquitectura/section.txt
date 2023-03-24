@@ -1,0 +1,21 @@
+Title: Arquitectura
+
+----
+
+Text: Realizamos planos y certificados de obra.
+
+----
+
+Intro: Realizamos planos y certificados de obra.
+
+----
+
+Header: true
+
+----
+
+Home: true
+
+----
+
+Subtitle: Subtítulo de sección

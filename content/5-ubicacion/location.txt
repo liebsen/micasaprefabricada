@@ -1,0 +1,45 @@
+Title: Ubicación
+
+----
+
+Intro: 
+
+----
+
+Text: Trabajamos y entregamos desde Trevelin Chubut. Nuestro equipo está siempre dispuesto a contactar con interesados o solo para responder dudas y sugerencias.
+
+----
+
+Header: true
+
+----
+
+Home: true
+
+----
+
+Address: 
+
+----
+
+Lat: -71.462588
+
+----
+
+Lng: -43.088812
+
+----
+
+Subtitle: 
+
+----
+
+Zoom: 10
+
+----
+
+Map: streets-v11
+
+----
+
+Style: streets-v11

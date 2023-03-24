@@ -1,0 +1,29 @@
+Title: Tiny houses
+
+----
+
+Intro: Tené tu Tiny House en 45 días y llevala a donde quieras. Totalmente equipada. Excelente calidad y terminación, estructura Steel Frame de alta resistencia. Casas 100% terminadas. Ahorro Energético. Construcción en seco.
+
+----
+
+Text: 
+
+¿Qué son las tiny houses? ¿Qué es el movimiento de la casa pequeña? ¿Por qué la gente elige pequeños hogares y qué significa la vida pequeña?
+
+En pocas palabras, la tendencia hacia las casas pequeñas se ha convertido en un movimiento social. Las personas están optando por reducir el tamaño del espacio en el que viven, simplifican y viven con menos. Las personas están abrazando la pequeña filosofía de la vida y la libertad que acompaña al pequeño estilo de vida de la casa. El pequeño movimiento de la casa es más que simplemente vivir en un espacio pequeño (aunque, una casa pequeña es ciertamente parte de ella).
+
+----
+
+Header: true
+
+----
+
+Home: true
+
+----
+
+Subtitle: Llevá tu casa donde quieras
+
+----
+
+Style: filter: contrast(1.25);
