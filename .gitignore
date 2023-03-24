@@ -1,5 +1,5 @@
 .DS_Store
-/vendor
-/content
-/kirby
-/panel
+vendor/
+content/
+kirby/
+panel/
