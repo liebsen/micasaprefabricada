@@ -42,7 +42,7 @@ Backgroundmenu: camminus-1603707314693-blur.jpg
 
 ----
 
-Logoloader: 51d7a89bab326cc7404ab0c7e0f2c3da.jpg
+Logoloader: logo-w.svg
 
 ----
 

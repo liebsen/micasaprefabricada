@@ -7,10 +7,10 @@ email: telemagico@gmail.com
 language: es_419
 role: admin
 history:
+  - arquitectura
   - home
   - socials/whatsapp
   - socials/phone
   - socials/facebook
-  - socials/email
 firstname: ""
 lastname: ""

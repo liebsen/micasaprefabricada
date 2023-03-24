@@ -6,7 +6,10 @@ Text: Realizamos planos y certificados de obra.
 
 ----
 
-Intro: Realizamos planos y certificados de obra.
+Intro: 
+
+Elegir una opción rápida y confiable, una vivienda segura y confortablee para habitar.
+Decidir donde vas a formas un hogar.
 
 ----
 
@@ -18,4 +21,12 @@ Home: true
 
 ----
 
-Subtitle: Subtítulo de sección
+Subtitle: Construir una casa es más que un sueño.  Construir una casa es una decisión.
+
+----
+
+Image: 
+
+----
+
+Style: 
