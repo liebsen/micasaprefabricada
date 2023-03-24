@@ -1,9 +1,0 @@
-Title: Mi Casa Prefabricada
-
-----
-
-Text: Contruimos viviendas y monoambientes de forma ágil y eficiente. Llamanos al 2945 690367 para mas información.
-
-----
-
-Style: filter: contrast(1.25);
