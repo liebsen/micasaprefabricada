@@ -1,3 +1,11 @@
+<?php if($site->whatsapp()):?>
+  <div class="floating-taps">
+    <a target="_blank" class="wpp is-clickable" href="https://wa.me/<?php echo $site->whatsapp()->value() ?>?text=<?php echo urlencode($site->whatsapptext()->value()) ?>">
+      <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
+    </a>
+  </div>
+<?php endif; ?>
+
   <footer class="wrapper style1 align-center">
     <div class="inner">
       <ul class="icons">
@@ -5,7 +13,7 @@
         <li><a href="<?= $social->action()->value() ? $social->action() . ':' : '' ?><?= $social->link() ?>" class="icon style2 <?= $social->icon() ?>" target="_blank"><span class="label"><?= $social->title() ?></span></a></li>
       <?php endforeach ?>
       </ul>
-      <p>© <?= date('Y') ?> Camminus | Todos los derechos reservados</p>
+      <p>© <?= date('Y') ?> MiCasaPrefabricada | Todos los derechos reservados</p>
     </div>
   </footer>
 

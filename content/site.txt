@@ -63,3 +63,11 @@ Stylemenu: filter: bri
 ----
 
 Googleanalytics: 
+
+----
+
+Whatsapp: 542945690367
+
+----
+
+Whatsapptext: Hola te contacto desde la página

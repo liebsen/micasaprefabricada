@@ -10,6 +10,12 @@ fields:
     type:  textarea
   line-a:
     type:  line
+  whatsapp:
+    label: Whatsapp de contacto
+    type:  text
+  whatsapptext:
+    label: Texto de Whatsapp
+    type:  textarea
   logo:
     label: Logo del sitio
     type:  image

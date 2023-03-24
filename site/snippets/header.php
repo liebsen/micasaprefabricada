@@ -15,6 +15,7 @@
   <link rel="shortcut icon" type="image/png" href="<?= $site->favicon()->toFile()->url() ?>" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="stylesheet" href="assets/css/animation.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <title><?php echo $site->title()->html() ?><?php if(trim(strtolower($site->title()->html())) !== trim(strtolower($page->title()->html()))):?> | <?php echo $page->title()->html() ?><?php endif ?></title>
   <style>
