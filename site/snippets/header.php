@@ -13,10 +13,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="<?= $site->themecolor() ?>" />
   <meta name="theme-color" content="<?= $site->themecolor() ?>" />
   <link rel="shortcut icon" type="image/png" href="<?= $site->favicon()->toFile()->url() ?>" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/site.css" />
-  <link rel="stylesheet" href="assets/css/animation.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <link rel="stylesheet" href="/assets/css/animation.css" />
+  <noscript><link rel="stylesheet" href="as/sets/css/noscript.css" /></noscript>
   <title><?php echo $site->title()->html() ?><?php if(trim(strtolower($site->title()->html())) !== trim(strtolower($page->title()->html()))):?> | <?php echo $page->title()->html() ?><?php endif ?></title>
   <style>
     :root { 
@@ -55,7 +55,7 @@
   <div class="header">
     <div class="align-left">
       <a href="<?= $page->slug() !== 'home' ? '/' : '#home' ?>">
-        <img class="logo" src="<?= $site->logo()->value() ? $site->logo()->toFile()->url() : '' ?>" width="250" />
+        <img class="logo" src="<?= $site->logo()->value() ? $site->logo()->toFile()->url() : '' ?>" width="200" />
       </a>
     </div>
     <div class="align-right">

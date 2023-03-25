@@ -17,7 +17,7 @@ document.querySelectorAll('.anchor').forEach(e => {
 })
 
 $(window).on("load", function() {
-  setTimeout(toggleLoader, 2000)
+  setTimeout(toggleLoader, 500)
   setTimeout(() => {
     $(' html, body').css({'overflow-y': 'auto'});  
   }, 3000)
@@ -75,7 +75,7 @@ function toggleLoader(){
 
   setTimeout(() => {
     $('#loader').toggleClass('loader-invisible');  
-  }, 700)
+  }, 100)
 }
 
 // window.scrollTo(0,0)

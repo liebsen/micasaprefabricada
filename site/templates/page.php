@@ -15,20 +15,6 @@
         <hr>
         <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
       </div>
-      <!-- Pages -->
-      <div class="items style1 medium onscroll-fade-in">
-      <?php foreach($page->children() as $folder): ?>
-        <a href="/<?= $page->slug() ?>/<?= $folder->slug() ?>">
-          <section>
-            <div class="inner">
-              <span class="icon style2 major fa-edit"></span>
-              <h3><?= $folder->title() ?></h3>
-              <p><?= $folder->intro()->kirbytext() ?></p>
-            </div>
-          </section>        
-        </a>
-      <?php endforeach ?>
-      </div>
       <!-- Gallery -->
       <div class="gallery style2 medium lightbox onscroll-fade-in">
       <?php foreach($page->files() as $file) :?>
