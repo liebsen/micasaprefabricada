@@ -4,18 +4,19 @@ files: true
 fields:
   title:
     label: Título del sitio
-    type:  text
+    type:  title
   text:
     label: Descripción para motores de búsqueda
     type:  textarea
+    buttons: false
   line-a:
     type:  line
   whatsapp:
     label: Whatsapp de contacto
-    type:  text
+    type:  tel
   whatsapptext:
     label: Texto de Whatsapp
-    type:  textarea
+    type:  text
   logo:
     label: Logo del sitio
     type:  image
