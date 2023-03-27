@@ -5,8 +5,8 @@
       <div class="anchor" name="<?= $page->slug() ?>"></div>
       <header>
         <div class="section-image" style="background-image:url(<?= $page->image()->url() ?>)">
-          <h1><?= $page->title() ?></h1>
-          <p><?= $page->subtitle() ?></p>
+          <!--h1><?= $page->title() ?></h1>
+          <p><?= $page->subtitle() ?></p-->
         </div>
       </header>
       <div class="inner">
@@ -14,20 +14,20 @@
         <p class="align-left"><?= $page->subtitle() ?></p>
         <hr>
         <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
-      </div>
-      <!-- Pages -->
-      <div class="items style1 medium onscroll-fade-in">
-      <?php foreach($page->children() as $folder): ?>
-        <a href="/<?= $page->slug() ?>/<?= $folder->slug() ?>">
+        <!-- Pages -->
+        <div class="items style2 medium onscroll-fade-in">
+        <?php foreach($page->children() as $folder): ?>
           <section>
-            <div class="inner">
-              <span class="icon style2 major fa-edit"></span>
-              <h3><?= $folder->title() ?></h3>
-              <p><?= $folder->intro()->kirbytext() ?></p>
-            </div>
+            <a class="icon" href="<?= $folder->url() ?>">
+              <div class="inner">
+                <span class="icon style2 major fa-edit"></span>
+                <h3><?= $folder->title() ?></h3>
+                <p><?= $folder->intro()->kirbytext() ?></p>
+              </div>
+            </a>
           </section>        
-        </a>
-      <?php endforeach ?>
+        <?php endforeach ?>
+        </div>
       </div>
       <!-- Gallery -->
       <div class="gallery style2 medium lightbox onscroll-fade-in">

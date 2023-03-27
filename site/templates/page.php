@@ -5,8 +5,8 @@
       <div class="anchor" name="<?= $page->slug() ?>"></div>
       <header>
         <div class="section-image" style="background-image:url(<?= $page->image()->url() ?>)">
-          <h1><?= $page->title() ?></h1>
-          <p><?= $page->subtitle() ?></p>
+          <!--h1><?= $page->title() ?></h1>
+          <p><?= $page->subtitle() ?></p-->
         </div>
       </header>
       <div class="inner">
