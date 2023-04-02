@@ -1,3 +1,8 @@
+:root {
+  --theme-dark-color: #9a208c;
+  --theme-light-color: #ffffff;
+}
+
 html, body {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -26,7 +31,7 @@ html, body {
 }
 
 .loader-background {
-  background-color: #333;
+  background-color: var(--theme-dark-color);
   background-size: 220px;
   background-repeat: no-repeat;
   background-position: center center;

@@ -24,11 +24,13 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	background-color: #ffffff;
@@ -39,7 +41,7 @@ body, input, select, textarea {
 	font-family: "Graphik Web", Helvetica, sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
-	line-height: 1.65;
+	line-height: 1.5;
 }
 
 body {
@@ -54,10 +56,10 @@ blockquote, q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
 
 table {
 	border-collapse: collapse;
@@ -205,7 +207,7 @@ input, select, textarea {
 
 	h1 {
 		font-size: 3.5rem;
-		line-height: 1.2;
+		line-height: 1;
 	}
 
 	h2 {
@@ -2187,9 +2189,10 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-		color: #000000 !important;
+		box-shadow: inset 0 0 0 1px var(--theme-dark-color);
+		color: var(--theme-dark-color)!important;
 	}
+
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2215,7 +2218,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #000000;
+			background-color: var(--theme-dark-color);
 			box-shadow: none;
 			color: #ffffff !important;
 		}
