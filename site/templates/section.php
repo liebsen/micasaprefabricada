@@ -18,7 +18,7 @@
         <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
         <!-- Pages -->
         <div class="items style2 medium onscroll-fade-in">
-        <?php foreach($page->children() as $folder): ?>
+        <?php foreach($page->children()->visible() as $folder): ?>
           <section>
             <a class="icon" href="<?= $folder->url() ?>">
               <div class="inner">
