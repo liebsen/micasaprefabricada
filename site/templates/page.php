@@ -3,12 +3,14 @@
   <div id="wrapper" class="divided">
     <section class="section wrapper style1 align-center">
       <div class="anchor" name="<?= $page->slug() ?>"></div>
+      <?php if($page->image()): ?>
       <header>
         <div class="section-image" style="background-image:url(<?= $page->image()->url() ?>)">
           <!--h1><?= $page->title() ?></h1>
           <p><?= $page->subtitle() ?></p-->
         </div>
       </header>
+      <?php endif ?>
       <div class="inner">
         <h2 class="align-left"><?= $page->title() ?></h2>
         <p class="align-left"><?= $page->subtitle() ?></p>
