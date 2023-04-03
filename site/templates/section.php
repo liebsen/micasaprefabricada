@@ -3,7 +3,7 @@
   <div id="wrapper" class="divided">
     <section class="section wrapper style1 align-center">
       <div class="anchor" name="<?= $page->slug() ?>"></div>
-      <?php if($page->image()->value()): ?>
+      <?php if($page->image()): ?>
       <header>
         <div class="section-image" style="background-image:url(<?= $page->image()->url() ?>)">
           <!--h1><?= $page->title() ?></h1>
