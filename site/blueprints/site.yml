@@ -3,12 +3,15 @@ pages: true
 files: true
 fields:
   title:
-    label: Título del sitio
+    label: Título para este sitio
     type:  title
   text:
     label: Descripción para motores de búsqueda
     type:  textarea
     buttons: false
+  slogan:
+    label: Eslógan para este sitio
+    type:  text
   line-a:
     type:  line
   whatsapp:
@@ -72,7 +75,7 @@ fields:
     type:  text
     default: '300,500,600,700,800'
     help: 'ej. 300,500,600,700,800'
-  shadow:
+  boxshadow:
     label: CSS Shadow (for boxes)
     type:  text
     default: '0 0 3px rgba(0,0,0,0.25)'

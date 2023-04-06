@@ -4,6 +4,12 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/* HTML5-Story overrides */
+
+.box {
+  box-shadow: var(--boxshadow)
+}
+
 .spotlight.style1 {
   min-height: 100vh;
 }

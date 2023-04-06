@@ -2095,6 +2095,7 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
+		font-family: -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;

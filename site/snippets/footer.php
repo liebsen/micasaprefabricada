@@ -13,7 +13,7 @@
         <li><a href="<?= $social->action()->value() ? $social->action() . ':' : '' ?><?= $social->link() ?>" class="icon style2 <?= $social->icon() ?>" target="_blank"><span class="label"><?= $social->title() ?></span></a></li>
       <?php endforeach ?>
       </ul>
-      <p>© <?= date('Y') ?> MiCasaPrefabricada | Todos los derechos reservados</p>
+      <p>© MiCasaPrefabricada <?= date('Y') ?> | <?= $site->slogan() ?: '' ?></p>
     </div>
   </footer>
 
