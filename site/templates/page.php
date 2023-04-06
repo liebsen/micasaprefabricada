@@ -4,6 +4,9 @@
     <section class="section wrapper style1 align-center">
       <div class="anchor" name="<?= $page->slug() ?>"></div>
       <?= snippet('pagetop') ?>
+      <div class="inner">
+        <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
+      </div>
       <!-- Gallery -->
       <div class="gallery style2 medium lightbox onscroll-fade-in">
       <?php foreach($page->files() as $file) :?>
