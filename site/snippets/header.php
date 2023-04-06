@@ -12,16 +12,21 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="<?= $site->themecolor() ?>" />
   <meta name="theme-color" content="<?= $site->themecolor() ?>" />
+  <link href="https://fonts.googleapis.com/css?family=<?= $site->fontfamily() ?: '' ?>:<?= $site->fontweight() ?: '' ?>" rel="stylesheet">
+
   <link rel="shortcut icon" type="image/png" href="<?= $site->favicon()->toFile()->url() ?>" />
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/site.css" />
   <link rel="stylesheet" href="/assets/css/animation.css" />
   <noscript><link rel="stylesheet" href="as/sets/css/noscript.css" /></noscript>
-  <title><?php echo $site->title()->html() ?><?php if(trim(strtolower($site->title()->html())) !== trim(strtolower($page->title()->html()))):?> | <?php echo $page->title()->html() ?><?php endif ?></title>
+  <title><?php snippet('pagetitle') ?></title>
   <style>
-    :root { 
-      --themebackground: <?= $site->themebackground()->value() ?: ''; ?>;
-      --themecolor: <?= $site->themecolor()->value() ?: ''; ?>;
+    :root {
+      --theme-dark-color: <?= $site->themebackground() ?: '' ?>;
+      --theme-color: <?= $site->themecolor() ?: '' ?>;
+    }
+    body {
+      font-family: '<?= $site->fontfamily() ?: '' ?>', -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
     }
   </style>
   <?php if($site->googleanalytics()->value()): ?>
