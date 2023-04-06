@@ -43,7 +43,7 @@
       <a href="/">
         <img class="logo fadeIn delay" src="<?= $site->logomenu()->value() ? $site->logomenu()->toFile()->url() : '' ?>" width="280" />
       </a>
-      <?php foreach($site->children() as $section):?>
+      <?php foreach($site->children()->visible() as $section):?>
       <?php if ($section->header()->value() === 'true'):?>
       <a class="fadeIn" href="/<?= $section->slug() ?>">
         <?= $section->title() ?>
