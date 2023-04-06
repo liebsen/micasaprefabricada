@@ -5,7 +5,7 @@
       <div class="content">
         <div class="anchor" name="<?= $site->children()->first()->slug() ?>"></div>
         <h1><?php echo $page->title()->html() ?></h1>
-        <p class="major"><?= $page->text()->kirbytext() ?></p>
+        <h5 class="text-light major"><?= $page->text()->kirbytext() ?></h5>
         <ul class="actions stacked">
           <li><a href="#<?= $site->children()->first()->next()->slug() ?>" class="button large wide smooth-scroll-middle">Comenzar</a></li>
         </ul>
@@ -24,7 +24,7 @@
         <div class="content">
           <div class="anchor" name="<?= $section->slug() ?>"></div>
           <h1><?= $section->title() ?></h1>
-          <p class="align-left"><?= $section->intro() ?></p>
+          <p class="text-light align-left"><?= $section->intro() ?></p>
           <ul class="actions special">
             <li><a href="/<?= $section->slug() ?>" class="button primary"> Conocer más </a></li>
           </ul>

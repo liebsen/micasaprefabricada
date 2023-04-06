@@ -4,6 +4,11 @@
     <section class="section wrapper style1 align-center">
       <div class="anchor" name="<?= $page->slug() ?>"></div>
       <?php if($page->image()): ?>
+      <div class="inner">
+        <h1 class="align-left"><?= $page->title() ?></h1>
+        <p class="text-light align-left"><?= $page->subtitle() ?></p>
+        <hr>
+      </div>
       <header>
         <div class="section-image" style="background-image:url(<?= $page->image()->url() ?>)">
           <!--h1><?= $page->title() ?></h1>
@@ -12,9 +17,6 @@
       </header>
       <?php endif ?>
       <div class="inner">
-        <h2 class="align-left"><?= $page->title() ?></h2>
-        <p class="align-left"><?= $page->subtitle() ?></p>
-        <hr>
         <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
       </div>
       <!-- Gallery -->
