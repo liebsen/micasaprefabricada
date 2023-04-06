@@ -3,18 +3,7 @@
   <div id="wrapper" class="divided">
     <section class="section wrapper style1 align-center">
       <div class="anchor" name="<?= $page->slug() ?>"></div>
-      <div class="inner">
-        <h1 class="align-left"><?= $page->title() ?></h1>
-        <h5 class="text-light align-left"><?= $page->subtitle() ?></h5>
-      </div>
-      <?php if($page->image()): ?>
-      <header>
-        <div class="section-image" style="background-image:url(<?= $page->image()->url() ?>)">
-          <!--h1><?= $page->title() ?></h1>
-          <p><?= $page->subtitle() ?></p-->
-        </div>
-      </header>
-    <?php endif ?>
+      <?= snippet('pagetop') ?>
       <div class="inner">
         <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
         <!-- Pages -->

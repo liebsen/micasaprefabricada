@@ -5,7 +5,7 @@
       <div class="content">
         <div class="anchor" name="<?= $site->children()->first()->slug() ?>"></div>
         <h1><?php echo $page->title()->html() ?></h1>
-        <h5 class="text-light major"><?= $page->text()->kirbytext() ?></h5>
+        <p class="text-light major"><?= $page->text()->kirbytext() ?></p>
         <ul class="actions stacked">
           <li><a href="#<?= $site->children()->first()->next()->slug() ?>" class="button large wide smooth-scroll-middle">Comenzar</a></li>
         </ul>
