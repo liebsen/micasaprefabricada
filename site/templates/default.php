@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-
   <div id="wrapper" class="divided">
     <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home">
       <div class="content">
@@ -10,10 +9,33 @@
           <li><a href="#<?= $site->children()->first()->next()->slug() ?>" class="button large wide smooth-scroll-middle">Comenzar</a></li>
         </ul>
       </div>
-      <div class="image onscroll-content-fade-left" style="<?= $site->children()->first()->style()->value() ?: '' ?>">
-      <?php if($page->files()->first()) :?>
-        <img src="<?= $page->files()->first()->url() ?>" alt="" />
-      <?php endif;?>
+      <div class="onscroll-content-fade-left" style="<?= $site->children()->first()->style()->value() ?: '' ?>">
+        <div class="swiffy" style="background-image: url('<?= $page->files()->first() ? $page->files()->first()->url() : ''; ?>')">
+          <div class="swiffy-slider">
+            <ul class="slider-container">
+              <?php foreach($site->find('modelos')->children() as $item):?>
+              <li>
+                <div class="swiffy-item">
+                  <a href="<?= $item->url() ?>">
+                    <img src="<?= $item->files()->first() ? $item->files()->first()->url() : '' ?>">
+                    <h4><?= $item->title() ?></h4>
+                    <p><?= $item->subtitle() ?></p>
+                  </a>
+                </div>
+              </li>
+            <?php endforeach ?>
+            </ul>
+
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+
+            <div class="slider-indicators">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+        </div>
         <div class="tail" name="<?= $site->children()->first()->slug() ?>"></div>
       </div>
     </section>
@@ -23,7 +45,7 @@
       <section class="spotlight style1 orient-<?= intval($i%2) == 0 ? 'right' : 'left' ?> content-align-left image-position-center onscroll-image-fade-in onscroll-content-fade-<?= intval($i%2) == 0 ? 'right' : 'left' ?>" id="<?= $section->slug() ?>">        
         <div class="content">
           <div class="anchor" name="<?= $section->slug() ?>"></div>
-          <h1><?= $section->title() ?></h1>
+          <h2><?= $section->title() ?></h2>
           <p class="text-light align-left"><?= $section->intro() ?></p>
           <ul class="actions special">
             <li><a href="/<?= $section->slug() ?>" class="button primary"> Conocer más </a></li>

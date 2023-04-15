@@ -10,6 +10,48 @@ html, body {
   box-shadow: var(--boxshadow)
 }
 
+.swiffy {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 10rem 1rem 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.swiffy-item {
+  border-radius: 0.75rem;
+  border: 3px solid #fff9;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  padding: 1rem;
+}
+
+.swiffy-item a {
+  text-decoration: none;
+}
+
+.swiffy-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.slider-nav {
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .swiffy {
+    padding: 3rem;
+  }
+}
+
 .spotlight.style1 {
   min-height: 100vh;
 }

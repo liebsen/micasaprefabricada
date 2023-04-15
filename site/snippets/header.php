@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/site.css" />
   <link rel="stylesheet" href="/assets/css/animation.css" />
+  <link rel="stylesheet" href="/assets/css/swiffy-slider.min.css" />
   <noscript><link rel="stylesheet" href="as/sets/css/noscript.css" /></noscript>
   <title><?php snippet('pagetitle') ?></title>
   <style>
