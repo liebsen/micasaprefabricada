@@ -14,7 +14,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;  
-  padding: 10rem 1rem 1rem 1rem;
+  padding: 15rem 1rem 1rem 1rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -48,7 +48,7 @@ html, body {
 
 @media screen and (min-width: 768px) {
   .swiffy {
-    padding: 3rem;
+    padding: 4rem;
   }
 }
 
