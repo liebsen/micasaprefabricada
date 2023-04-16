@@ -20,7 +20,7 @@ $(window).on("load", function() {
   setTimeout(toggleLoader, 1000)
   setTimeout(() => {
     $(' html, body').css({'overflow-y': 'auto'});  
-  }, 1000)
+  }, 2000)
   $('.toggle-menu').click(() => {
     const overflow = document.querySelector('.overlay').classList.contains('active') ? 'auto' : 'hidden'
     document.querySelector('.overlay').classList.toggle('active')

@@ -39,7 +39,7 @@
 <body class="is-preload">
   <div id="loader" style="<?= $site->styleloader()->value() ? : '' ?>">
     <div class="loader-background">
-      <div class="loader-container animated fadeIn" style="background-image: url('<?= $site->backgroundloader()->value() ? $site->backgroundloader()->toFile()->url() : ''; ?>')">
+      <div class="loader-container" style="background-image: url('<?= $site->backgroundloader()->value() ? $site->backgroundloader()->toFile()->url() : ''; ?>')">
       </div>
     </div>
   </div>
