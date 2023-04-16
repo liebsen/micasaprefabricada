@@ -23,10 +23,13 @@ html, body {
 
 .swiffy-item {
   border-radius: 0.75rem;
-  border: 3px solid #fff9;
   background-color: white;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-  padding: 1rem;
+  padding: 0;
+}
+
+.swiffy-text {
+  padding: 0.5rem 1.5rem;
 }
 
 .swiffy-item a {
@@ -36,7 +39,9 @@ html, body {
 .swiffy-item img {
   max-width: 100%;
   height: auto;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .slider-nav {

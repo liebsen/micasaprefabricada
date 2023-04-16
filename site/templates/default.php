@@ -18,8 +18,10 @@
                 <div class="swiffy-item">
                   <a href="<?= $item->url() ?>">
                     <img src="<?= $item->files()->first() ? $item->files()->first()->url() : '' ?>">
-                    <h4><?= $item->title() ?></h4>
-                    <p><?= $item->subtitle() ?></p>
+                    <div class="swiffy-text">
+                      <h4><?= $item->title() ?></h4>
+                      <p><?= $item->subtitle() ?></p>
+                    </div>
                   </a>
                 </div>
               </li>
