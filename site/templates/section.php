@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-
   <div id="wrapper" class="divided">
     <section class="section wrapper style1 align-center">
       <div class="anchor" name="<?= $page->slug() ?>"></div>
