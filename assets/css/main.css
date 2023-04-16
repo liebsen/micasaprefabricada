@@ -3464,10 +3464,10 @@ input, select, textarea {
 
 		.banner.style1 .content {
 			padding: 7rem 7rem 5rem 7rem ;
-			-moz-align-self: center;
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			align-self: center;
+			-moz-align-self: flex-end;
+			-webkit-align-self: flex-end;
+			-ms-align-self: flex-end;
+			align-self: flex-end;
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
@@ -4866,10 +4866,10 @@ input, select, textarea {
 
 		.spotlight.style1 .content {
 			padding: 7rem 7rem 5rem 7rem ;
-			-moz-align-self: center;
-			-webkit-align-self: center;
-			-ms-align-self: center;
-			align-self: center;
+			-moz-align-self: flex-end;
+			-webkit-align-self: flex-end;
+			-ms-align-self: flex-end;
+			align-self: flex-end;
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
