@@ -38,25 +38,29 @@ $(window).on("load", function() {
   })
 })
 
-
 window.addEventListener("wheel", e => {
   if (wheelInt) {
     clearInterval(wheelInt)
   }
+
   const delta = Math.sign(e.deltaY)
   const item = window.location.hash.replace('#', '') || document.querySelectorAll('.anchor')[0].getAttribute('name')
   const target = delta > 0 ? document.querySelector(`.tail[name="${item}"]`) : document.querySelector(`.anchor[name="${item}"]`)
+
   if ( delta > 0 && item === items[items.length - 1] || items.length === 1) {
+    console.log('lastitem')
     return true
   }
 
   if (isInViewport(target, 50)) {
+    console.log('viewport')
     wheelInt = setTimeout(() => {
-      var index = items.indexOf(item)
-      if (index || index > -1 && delta > 0) {
-        const itemTo = delta > 0 ? index++ : index--
-        if (items[index]) {
-          window.location.hash = items[index]
+      var i = items.indexOf(item)
+      if (i || i > -1 && delta > 0) {
+        const itemTo = delta > 0 ? i++ : i--
+        if (items[i]) {
+          console.log('hash',items[i])
+          window.location.hash = items[i]
         }
       }
     }, 100)
@@ -70,8 +74,8 @@ window.addEventListener("wheel", e => {
 })
 
 function toggleLoader(){
-  $('.loader-logo').removeClass('fadeOut')
-  $('.loader-logo').addClass('fadeIn')
+  $('.loader-container').removeClass('fadeOut')
+  $('.loader-container').addClass('fadeIn')
 
   setTimeout(() => {
     $('#loader').toggleClass('loader-invisible');  

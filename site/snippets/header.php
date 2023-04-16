@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title><?php snippet('pagetitle') ?></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta name="description" content="<?= $site->text() ?>"/>
@@ -20,7 +21,8 @@
   <link rel="stylesheet" href="/assets/css/animation.css" />
   <link rel="stylesheet" href="/assets/css/swiffy-slider.min.css" />
   <noscript><link rel="stylesheet" href="as/sets/css/noscript.css" /></noscript>
-  <title><?php snippet('pagetitle') ?></title>
+
+
   <style>
     :root {
       --theme-dark-color: <?= $site->themebackground() ?: '' ?>;
@@ -34,10 +36,10 @@
     <?php snippet('googleanalytics') ?>
   <?php endif ?>
 </head>
-<body class="is-preload animated speed fadeIn">
+<body class="is-preload">
   <div id="loader" style="<?= $site->styleloader()->value() ? : '' ?>">
     <div class="loader-background">
-      <div class="loader-container animated fadeIn delay" style="background-image: url('<?= $site->backgroundloader()->value() ? $site->backgroundloader()->toFile()->url() : ''; ?>')">
+      <div class="loader-container animated fadeIn" style="background-image: url('<?= $site->backgroundloader()->value() ? $site->backgroundloader()->toFile()->url() : ''; ?>')">
       </div>
     </div>
   </div>

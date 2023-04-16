@@ -22,26 +22,29 @@ html, body {
 }
 
 .swiffy-item {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
   border-radius: 0.75rem;
   background-color: white;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
   padding: 0;
 }
 
-.swiffy-text {
-  padding: 0.5rem 1.5rem;
-}
-
-.swiffy-item a {
-  text-decoration: none;
-}
-
-.swiffy-item img {
+.swiffy-img {
   max-width: 100%;
   height: auto;
   border-radius: 0.75rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 10rem;
+}
+
+.swiffy-text {
+  padding: 0.5rem 1.5rem;
 }
 
 .slider-nav {
@@ -103,11 +106,6 @@ html, body {
   }
 }
 
-.loader-logo {
-  filter: drop-shadow(0 0 2.5rem rgba(0,0,0,0.5));
-  margin: 0;
-}
-
 .loader-container,
 .loader-doodles {
   opacity: 0;
@@ -117,10 +115,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.loader-logo {
-  opacity: 0;
 }
 
 .loader-container {
@@ -263,7 +257,7 @@ html, body {
 }
 
 .header.scroll .logo {
-  width: 150px;
+  width: 100px;
 }
 
 .header .align-right {

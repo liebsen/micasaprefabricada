@@ -15,15 +15,13 @@
             <ul class="slider-container">
               <?php foreach($site->find('modelos')->children() as $item):?>
               <li>
-                <div class="swiffy-item">
-                  <a href="<?= $item->url() ?>">
-                    <img src="<?= $item->files()->first() ? $item->files()->first()->url() : '' ?>">
-                    <div class="swiffy-text">
-                      <h4><?= $item->title() ?></h4>
-                      <p><?= $item->subtitle() ?></p>
-                    </div>
-                  </a>
-                </div>
+                <a href="<?= $item->url() ?>" class="swiffy-item">
+                  <div class="swiffy-img" style="background-image: url('<?= $item->files()->first() ? $item->files()->first()->url() : '' ?>')"></div>
+                  <div class="swiffy-text">
+                    <h4><?= $item->title() ?></h4>
+                    <p><?= $item->subtitle() ?></p>
+                  </div>
+                </a>
               </li>
             <?php endforeach ?>
             </ul>
