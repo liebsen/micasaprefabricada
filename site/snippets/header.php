@@ -31,6 +31,90 @@
     body {
       font-family: '<?= $site->fontfamily() ?: '' ?>', -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
     }
+
+    #loader {
+      background-color: var(--theme-dark-color);
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 10000; 
+      transition: all ease 1.4s;
+    }
+
+    .loader-background {
+      opacity: 0.25;
+      background-size: 220px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      /* background-image: url(/assets/images/BackgroundLoader.jpg); */
+      -webkit-animation-name: loaderIn;
+      animation-name: loaderIn;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      animation-delay: 0s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;  
+    }
+
+    @keyframes loaderIn {
+      0% {
+        opacity: 0.25;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .loader-container {
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      background-size: 220px;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .loader-section {
+      font-size: 1.25rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    .loader-doodles {
+      background-size: 25%, 50%, contain;
+      background-position: center, center, center;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      min-height: 100%;
+    }
+
+    .loader-container svg {
+      display: none;
+      flex: 1;
+    }
+
+    .load-progress {
+      height: 200px;
+    }
+
+    .load-progress > svg {
+      height: 100%;
+      display: block;
+    }
+
+    .loader-invisible {
+      opacity:0;
+      pointer-events: none;
+    }    
   </style>
   <?php if($site->googleanalytics()->value()): ?>
     <?php snippet('googleanalytics') ?>
