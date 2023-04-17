@@ -4,19 +4,20 @@
       <div class="anchor" name="<?= $page->slug() ?>"></div>
       <?= snippet('pagetop') ?>
       <div class="inner">
-        <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
+        <div class="align-left">
+          <?= $page->text()->kirbytext() ?>
+        </div>
         <!-- Pages -->
-        <div class="items style2 medium onscroll-fade-in">
+        <div class="align-left">
         <?php foreach($page->children()->visible() as $folder): ?>
-          <section>
-            <a class="icon" href="<?= $folder->url() ?>">
-              <div class="inner">
-                <span class="icon style2 major fa-edit"></span>
-                <h3><?= $folder->title() ?></h3>
-                <p><?= $folder->intro()->kirbytext() ?></p>
-              </div>
-            </a>
-          </section>        
+          <a class="no-decor" href="<?= $folder->url() ?>">
+            <header>
+              <h3><?= $folder->title() ?></h3>
+              <p><?= $folder->subtitle() ?></p>
+            </header>
+            <p><?= $folder->intro()->kirbytext() ?></p>
+          </a>
+          <hr>
         <?php endforeach ?>
         </div>
       </div>

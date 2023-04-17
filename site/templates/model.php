@@ -5,7 +5,7 @@
       <div class="anchor" name="<?= $page->slug() ?>"></div>
       <?= snippet('pagetop') ?>
       <div class="inner">
-        <div class="p-align-left"><?= $page->text()->kirbytext() ?></div>
+        <div class="align-left"><?= $page->text()->kirbytext() ?></div>
         <div class="table-wrapper">
           <table class="alt">
             <tbody>
