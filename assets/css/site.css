@@ -124,6 +124,7 @@ html, body {
 }
 
 .overlay-content a {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
   flex: 1;
   flex-grow: 0;
   color: var(--theme-color);
@@ -136,9 +137,6 @@ html, body {
   text-transform: uppercase;
   text-shadow: 0 0 4px #6665;
   transition: all 0.25s ease-in-out;
-}
-
-.overlay-content a {
   animation: reveal 0.3s ease-in-out 1 normal forwards;
 }
 
