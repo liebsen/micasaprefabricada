@@ -12,7 +12,7 @@
         <?php foreach($page->children()->visible() as $folder): ?>
           <a class="no-decor" href="<?= $folder->url() ?>">
             <header>
-              <h3><?= $folder->title() ?></h3>
+              <h2><?= $folder->title() ?></h2>
               <p><?= $folder->subtitle() ?></p>
             </header>
             <p><?= $folder->intro()->kirbytext() ?></p>
