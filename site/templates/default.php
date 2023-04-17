@@ -18,7 +18,7 @@
                 <a href="<?= $item->url() ?>" class="swiffy-item">
                   <div class="swiffy-img" style="background-image: url('<?= $item->files()->first() ? $item->files()->first()->url() : '' ?>')"></div>
                   <div class="swiffy-text">
-                    <h4><?= $item->title() ?></h4>
+                    <h4><strong><?= $item->title() ?></strong></h4>
                     <p><?= $item->subtitle() ?></p>
                   </div>
                 </a>
@@ -45,7 +45,7 @@
       <section class="spotlight style1 orient-<?= intval($i%2) == 0 ? 'right' : 'left' ?> content-align-left image-position-center onscroll-image-fade-in onscroll-content-fade-<?= intval($i%2) == 0 ? 'right' : 'left' ?>" id="<?= $section->slug() ?>">        
         <div class="content">
           <div class="anchor" name="<?= $section->slug() ?>"></div>
-          <h2><?= $section->title() ?></h2>
+          <h1><?= $section->title() ?></h1>
           <p class="text-light align-left"><?= $section->intro() ?></p>
           <ul class="actions special">
             <li><a href="/<?= $section->slug() ?>" class="button primary"> Conocer más </a></li>
