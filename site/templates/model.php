@@ -9,49 +9,49 @@
         <div class="table-wrapper">
           <table class="alt">
             <tbody>
-            <?php if($page->sup()):?>
+            <?php if($page->sup()->value()):?>
               <tr>
                 <td align="right"><strong>Superficie cubierta</strong></td>
                 <td align="left"><?= $page->sup()->value() ?>m2</td>
               </tr>
             <?php endif ?>
-            <?php if($page->amb()):?>
+            <?php if($page->amb()->value()):?>
               <tr>
                 <td align="right"><strong>Ambientes</strong></td>
                 <td align="left"><?= $page->amb()->value() ?></td>
               </tr>
             <?php endif ?>
-            <?php if($page->rooms()):?>
+            <?php if($page->rooms()->value()):?>
               <tr>
                 <td align="right"><strong>Habitaciones</strong></td>
                 <td align="left"><?= $page->rooms()->value() ?></td>
               </tr>
             <?php endif ?>
-            <?php if($page->bathrooms()):?>
+            <?php if($page->bathrooms()->value()):?>
               <tr>
                 <td align="right"><strong>Baños</strong></td>
                 <td align="left"><?= $page->bathrooms()->value() ?></td>
               </tr>
             <?php endif ?>
-            <?php if($page->floors()):?>
+            <?php if($page->floors()->value()):?>
               <tr>
                 <td align="right"><strong>Plantas</strong></td>
                 <td align="left"><?= $page->floors()->value() ?></td>
               </tr>
             <?php endif ?>
-            <?php if($page->delivertime()):?>
+            <?php if($page->delivertime()->value()):?>
               <tr>
                 <td align="right"><strong>Entrega</strong></td>
                 <td align="left"><?= $page->delivertime()->value() ?> días</td>
               </tr>
             <?php endif ?>
-            <?php if($page->price()):?>
+            <?php if($page->price()->value()):?>
               <tr>
                 <td align="right"><strong>Precio</strong></td>
                 <td align="left"><?= $page->price()->value() ?>ARS</td>
               </tr>
             <?php endif ?>
-            <?php if($page->equipment()):?>
+            <?php if($page->equipment()->value()):?>
               <tr>
                 <td align="right"><strong>Equipada con</strong></td>
                 <td align="left"><?= $page->equipment()->value() ?></td>
