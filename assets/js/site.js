@@ -48,7 +48,6 @@ window.addEventListener("wheel", e => {
   const target = delta > 0 ? document.querySelector(`.tail[name="${item}"]`) : document.querySelector(`.anchor[name="${item}"]`)
 
   if ( delta > 0 && item === items[items.length - 1] || items.length === 1) {
-    console.log('lastitem')
     return true
   }
 
