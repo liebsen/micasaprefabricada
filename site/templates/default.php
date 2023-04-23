@@ -4,7 +4,7 @@
       <div class="content">
         <div class="anchor" name="<?= $site->children()->first()->slug() ?>"></div>
         <h1><?php echo $page->title()->html() ?></h1>
-        <p class="text-light text-hili major"><?= $page->text()->kirbytext() ?></p>
+        <p class="text-light text-hili"><?= $page->text() ?></p>
         <ul class="actions stacked">
           <li><a href="#<?= $site->children()->first()->next()->slug() ?>" class="button large wide smooth-scroll-middle">Comenzar</a></li>
         </ul>
@@ -18,8 +18,8 @@
                 <a href="<?= $item->url() ?>" class="swiffy-item">
                   <div class="swiffy-img" style="background-image: url('<?= $item->files()->first() ? $item->files()->first()->url() : '' ?>')"></div>
                   <div class="swiffy-text">
-                    <h4><strong><?= $item->title() ?></strong></h4>
-                    <p><?= $item->subtitle() ?></p>
+                    <h3 class="swiffy-title"><strong><?= $item->title() ?></strong></h3>
+                    <p class="text-hili"><?= $item->subtitle() ?></p>
                   </div>
                 </a>
               </li>
