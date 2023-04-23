@@ -3463,7 +3463,7 @@ input, select, textarea {
 	}
 
 		.banner.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 1rem;
 			-moz-align-self: flex-end;
 			-webkit-align-self: flex-end;
 			-ms-align-self: flex-end;
@@ -3514,33 +3514,33 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			.banner.style1 .content {
+			/* .banner.style1 .content {
 				padding: 5rem 5rem 3rem 5rem ;
-			}
+			}*/
 
 		}
 
 		@media screen and (max-width: 1280px) {
 
-			.banner.style1 .content {
+			/*.banner.style1 .content {
 				padding: 4rem 4rem 2rem 4rem ;
-			}
+			}*/
 
 		}
 
 		@media screen and (max-width: 980px) {
 
-			.banner.style1 .content {
+			/*.banner.style1 .content {
 				padding: 3.75rem 3rem 1.75rem 3rem ;
-			}
+			}*/
 
 		}
 
 		@media screen and (max-width: 736px) {
 
-			.banner.style1 .content {
+			/*.banner.style1 .content {
 				padding: 2.5rem 2rem 0.5rem 2rem ;
-			}
+			}*/
 
 		}
 
