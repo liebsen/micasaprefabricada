@@ -3533,6 +3533,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
+			.banner.style1 {
+				flex-direction: column;
+				flex-direction: column-reverse;
+			}
 
 			.banner.style1 .content {
 				padding: 2rem;
@@ -3543,7 +3547,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
 
 			.banner.style1 .content {
 				padding: 2rem;

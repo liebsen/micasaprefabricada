@@ -19,13 +19,16 @@ document.querySelectorAll('.anchor').forEach(e => {
 $(window).on("load", function() {
   setTimeout(toggleLoader, 1000)
   setTimeout(() => {
+    $('body').removeClass('hidden')
+    $('body').addClass('auto')
     $(' html, body').css({'overflow-y': 'auto'});  
   }, 2000)
   $('.toggle-menu').click(() => {
     const overflow = document.querySelector('.overlay').classList.contains('active') ? 'auto' : 'hidden'
     document.querySelector('.overlay').classList.toggle('active')
     setTimeout(() => {
-      $(' html, body').css({'overflow-y': overflow})
+      $('body').addClass(overflow)
+      //$(' html, body').css({'overflow-y': overflow})
     }, 30)
   })
   $(window).scroll(function(e) {

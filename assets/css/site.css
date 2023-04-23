@@ -1,8 +1,15 @@
 html, body {
-  overflow-x: hidden;
-  overflow-y: hidden;
   scroll-behavior: smooth;
 }
+
+body.auto {
+  overflow-y: scroll;
+}
+
+body.hidden {
+  overflow-y: hidden;
+}
+
 
 /* HTML5-Story overrides */
 
@@ -63,6 +70,9 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
+  body.hidden {
+    padding-right: 15px;
+  }
   .swiffy {
     padding: 4rem;
   }

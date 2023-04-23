@@ -123,7 +123,7 @@
     <?php snippet('googleanalytics') ?>
   <?php endif ?>
 </head>
-<body class="is-preload">
+<body class="is-preload hidden">
   <div id="loader" style="<?= $site->styleloader()->value() ? : '' ?>">
     <div class="loader-background">
       <div class="loader-container" style="background-image: url('<?= $site->backgroundloader()->value() ? $site->backgroundloader()->toFile()->url() : ''; ?>')">
