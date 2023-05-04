@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
   <div id="wrapper" class="divided">
-    <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home">
+    <section class="banner style1 orient-left content-align-left image-position-left fullscreen onload-image-fade-in onload-content-fade-right" id="home">
       <div class="content">
         <div class="anchor" name="<?= $site->children()->first()->slug() ?>"></div>
         <h1><?php echo $page->title()->html() ?></h1>
