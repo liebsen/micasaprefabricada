@@ -21,7 +21,7 @@
       <div class="anchor" name="modelos"></div>
       <div class="content">
         <h1 class="text-white"><?php echo $site->find('/modelos')->title() ?></h1>
-        <p class="text-light text-hili"><?php echo $site->find('/modelos')->text() ?></p>
+        <p class="text-light text-hili"><?php echo $site->find('/modelos')->intro() ?></p>
         <ul class="actions stacked">
           <li><a href="/modelos" class="button large wide smooth-scroll-middle">Más de nuestros modelos</a></li>
         </ul>        
