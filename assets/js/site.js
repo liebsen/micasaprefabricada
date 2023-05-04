@@ -41,7 +41,7 @@ $(window).on("load", function() {
   })
 })
 
-window.addEventListener("wheel", e => {
+/* window.addEventListener("wheel", e => {
   if (wheelInt) {
     clearInterval(wheelInt)
   }
@@ -55,13 +55,11 @@ window.addEventListener("wheel", e => {
   }
 
   if (isInViewport(target, 50)) {
-    console.log('viewport')
     wheelInt = setTimeout(() => {
       var i = items.indexOf(item)
       if (i || i > -1 && delta > 0) {
         const itemTo = delta > 0 ? i++ : i--
         if (items[i]) {
-          console.log('hash',items[i])
           window.location.hash = items[i]
         }
       }
@@ -73,7 +71,7 @@ window.addEventListener("wheel", e => {
   return false
 }, {
   passive: false
-})
+}) */
 
 function toggleLoader(){
   $('.loader-container').removeClass('fadeOut')

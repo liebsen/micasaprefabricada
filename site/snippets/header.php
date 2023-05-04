@@ -33,7 +33,9 @@
     }
 
     #loader {
-      background-color: var(--theme-dark-color);
+      /*background-color: var(--theme-dark-color);*/
+      background: var(--theme-color);
+      background: radial-gradient(circle, var(--theme-color) 0%, var(--theme-dark-color) 100%);
       position: fixed;
       left: 0;
       top: 0;
@@ -47,7 +49,7 @@
     }
 
     .loader-background {
-      opacity: 0;
+      opacity: 0.1;
       background-size: 220px;
       background-repeat: no-repeat;
       background-position: center center;
@@ -64,13 +66,14 @@
 
     @keyframes loaderIn {
       0% {
-        opacity: 0;
+        opacity: 0.1;
       }
-      5% {
+      50% {
         opacity: 0.25;
       }
       100% {
-        opacity: 1;
+        opacity: 0.9;
+        transform: scale(0.75);
       }
     }
 

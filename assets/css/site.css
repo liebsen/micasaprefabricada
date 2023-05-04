@@ -69,6 +69,10 @@ body.hidden {
   border-radius: 0;
 }
 
+.slider-container li {
+  padding: 3rem;
+}
+
 @media screen and (min-width: 768px) {
   body.hidden {
     padding-right: 15px;
@@ -110,6 +114,10 @@ body.hidden {
   display: block;
   pointer-events: inherit;
   opacity: 1;
+}
+
+.bg-theme {
+  background-color: var(--theme-dark-color);
 }
 
 .overlay-content {

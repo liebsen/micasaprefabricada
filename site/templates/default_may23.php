@@ -17,14 +17,9 @@
       </div>
     </section>
 
-    <section id="modelos" class="spotlight style1 orient-left content-align-center image-position-center onscroll-image-fade-in onscroll-content-fade-left">
+    <section id="modelos" class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in onscroll-content-fade-left">
       <div class="anchor" name="modelos"></div>
-      <div class="content">
-        <h1 class="text-white"><?php echo $site->find('/modelos')->title() ?></h1>
-        <p class="text-light text-hili"><?php echo $site->find('/modelos')->text() ?></p>
-        <ul class="actions stacked">
-          <li><a href="/modelos" class="button large wide smooth-scroll-middle">Más de nuestros modelos</a></li>
-        </ul>        
+      <div class="image onscroll-content-fade-left">
         <div class="swiffy">
           <div class="swiffy-slider">
             <ul class="slider-container">
@@ -51,6 +46,14 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="content">
+        <h1 class="text-white"><?php echo $site->find('/modelos')->title() ?></h1>
+        <p class="text-light text-hili"><?php echo $site->find('/modelos')->text() ?></p>
+        <ul class="actions stacked">
+          <li><a href="/modelos" class="button large wide smooth-scroll-middle">Más de nuestros modelos</a></li>
+        </ul>        
+
         <div class="tail" name="modelos"></div>
       </div>
 
@@ -58,7 +61,7 @@
 
     <?php $i=0; foreach($site->children()->visible() as $section):?>
       <?php if ($section->home()->value() === 'true'):?>
-      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in onscroll-content-fade-right" id="<?= $section->slug() ?>">        
+      <section class="spotlight style1 orient-<?= intval($i%2) == 0 ? 'right' : 'left' ?> content-align-left image-position-center onscroll-image-fade-in onscroll-content-fade-<?= intval($i%2) == 0 ? 'right' : 'left' ?>" id="<?= $section->slug() ?>">        
         <div class="content">
           <div class="anchor" name="<?= $section->slug() ?>"></div>
           <h1><?= $section->title() ?></h1>
