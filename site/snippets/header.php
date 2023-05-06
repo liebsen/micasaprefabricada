@@ -13,15 +13,14 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="<?= $site->themecolor() ?>" />
   <meta name="theme-color" content="<?= $site->themecolor() ?>" />
+  <link rel="manifest" href="/manifest.json">
   <link href="https://fonts.googleapis.com/css?family=<?= $site->fontfamily() ?: '' ?>:<?= $site->fontweight() ?: '' ?>" rel="stylesheet">
-
   <link rel="shortcut icon" type="image/png" href="<?= $site->favicon()->toFile()->url() ?>" />
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/site.css" />
   <link rel="stylesheet" href="/assets/css/animation.css" />
   <link rel="stylesheet" href="/assets/css/swiffy-slider.min.css" />
   <noscript><link rel="stylesheet" href="as/sets/css/noscript.css" /></noscript>
-
 
   <style>
     :root {
