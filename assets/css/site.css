@@ -79,6 +79,7 @@ body.hidden {
   }
   .swiffy {
     padding: 4rem;
+    padding-top: 0;
   }
 }
 

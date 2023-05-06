@@ -38,7 +38,6 @@ body {
 }
 
 body, input, select, textarea {
-	font-family: "Graphik Web", Helvetica, sans-serif;
 	font-size: 1.25rem;
 	font-weight: 400;
 	line-height: 1.5;

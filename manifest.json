@@ -1,0 +1,22 @@
+{
+    "name":"Mi Casa Prefabricada",
+    "short_name":"MCP",
+    "start_url":"/",
+    "display":"standalone",
+    "background_color":"#5900b3",
+    "theme_color":"black",
+    "scope": ".",
+    "description":"Ofrecemos soluciones habitacionales de forma ágil y eficiente",
+    "icons":[
+        {
+            "src":"/content/icon-192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"/content/icon-512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+}

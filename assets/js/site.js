@@ -16,6 +16,18 @@ document.querySelectorAll('.anchor').forEach(e => {
   items.push(e.getAttribute('name'))
 })
 
+// Register the Service Worker
+async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('/serviceworker.js');
+    }
+    catch (e) {
+      console.log('SW registration failed');
+    }
+  }
+}
+
 $(window).on("load", function() {
   setTimeout(toggleLoader, 1000)
   setTimeout(() => {
@@ -39,6 +51,7 @@ $(window).on("load", function() {
       document.querySelector('.header').classList.remove('scroll')
     }
   })
+  registerSW();
 })
 
 /* window.addEventListener("wheel", e => {
