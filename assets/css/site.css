@@ -69,9 +69,9 @@ body.hidden {
   border-radius: 0;
 }
 
-.slider-container li {
+/*.slider-container li {
   padding: 3rem;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   body.hidden {

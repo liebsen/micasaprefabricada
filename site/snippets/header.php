@@ -47,7 +47,7 @@
     }
 
     .loader-background {
-      opacity: 0.1;
+      opacity: 1;
       background-size: 220px;
       background-repeat: no-repeat;
       background-position: center center;
@@ -64,13 +64,13 @@
 
     @keyframes loaderIn {
       0% {
-        opacity: 0.1;
+        opacity: 1;
       }
       50% {
-        opacity: 0.25;
+        opacity: 0.75;
       }
       100% {
-        opacity: 0.9;
+        opacity: 0;
         transform: scale(0.75);
       }
     }
