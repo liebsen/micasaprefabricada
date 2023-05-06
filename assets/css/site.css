@@ -24,7 +24,7 @@ body.hidden {
   display: flex;
   justify-content: center;
   align-items: center;  
-  padding: 8rem 1rem 1rem 1rem;
+  /*padding: 8rem 1rem 1rem 1rem;*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -198,7 +198,7 @@ body.hidden {
 }
 
 .header.scroll .logo {
-  width: 100px;
+  width: 150px;
 }
 
 .header .align-right {
