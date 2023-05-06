@@ -69,9 +69,28 @@ body.hidden {
   border-radius: 0;
 }
 
-/*.slider-container li {
-  padding: 3rem;
-}*/
+
+/* swiffy */
+.swiffy .slider-container li {
+  padding: 1.25rem;
+}
+
+.swiffy .slider-indicators {
+  bottom: -2rem;
+  margin-bottom: 0;
+}
+
+.swiffy .slider-indicators > button {
+  height: 0.75rem;
+  box-shadow: none;
+  border-width: 0.5rem;
+  border-color: #31618c;
+  margin: 0 0.25rem;
+}
+
+.swiffy .slider-indicators > .active {
+  border-color: var(--theme-dark-color);
+}
 
 @media screen and (min-width: 768px) {
   body.hidden {

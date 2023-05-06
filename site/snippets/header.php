@@ -67,10 +67,11 @@
       }
       50% {
         opacity: 0.75;
+        transform: scale(0.75);
       }
       100% {
         opacity: 0;
-        transform: scale(0.75);
+        transform: scale(0.5);
       }
     }
 

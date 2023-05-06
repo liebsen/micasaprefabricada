@@ -6,6 +6,7 @@
     "background_color":"#5900b3",
     "theme_color":"black",
     "scope": ".",
+    "start_url":"/",
     "description":"Ofrecemos soluciones habitacionales de forma ágil y eficiente",
     "icons":[
         {
