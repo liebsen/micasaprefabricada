@@ -92,6 +92,16 @@ body.hidden {
   border-color: var(--theme-dark-color);
 }
 
+.desktop {
+  display: block;  
+}
+
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   body.hidden {
     padding-right: 15px;
@@ -104,6 +114,7 @@ body.hidden {
     min-height: 100vh;
   }
 }
+
 
 .spotlight:last-child .button-next {
   display: none;

@@ -2,14 +2,14 @@
   <div id="wrapper" class="divided">
     <section class="banner style1 orient-left content-align-left image-position-left fullscreen onload-image-fade-in onload-content-fade-right" id="home">
       <div class="content">
-        <div class="anchor" name="<?= $site->children()->first()->slug() ?>"></div>
+        <div class="anchor" name="home"></div>
         <h1><?php echo $page->title()->html() ?></h1>
         <p class="text-light text-hili"><?= $page->text() ?></p>
         <ul class="actions stacked">
           <li><a href="#modelos" class="button large wide smooth-scroll-middle">Comenzar</a></li>
         </ul>
       </div>
-      <div class="image onscroll-content-fade-left" style="<?= $site->children()->first()->style()->value() ?: '' ?>">
+      <div class="image desktop onscroll-content-fade-left" style="<?= $site->children()->first()->style()->value() ?: '' ?>">
       <?php if($page->files()->first()) :?>
         <img src="<?= $page->files()->first()->url() ?>" alt="" />
       <?php endif;?>
