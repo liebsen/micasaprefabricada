@@ -100,16 +100,14 @@ body.hidden {
     padding: 4rem;
     padding-top: 0;
   }
-}
-
-.spotlight.style1 {
-  min-height: 100vh;
+  .spotlight.style1 {
+    min-height: 100vh;
+  }
 }
 
 .spotlight:last-child .button-next {
   display: none;
 }
-
 
 .p-align-left p {
   text-align: left;
