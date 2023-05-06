@@ -83,7 +83,7 @@ body.hidden {
 .swiffy .slider-indicators > button {
   height: 0.75rem;
   box-shadow: none;
-  border-width: 0.5rem;
+  border-width: 0.25rem;
   border-color: #31618c;
   margin: 0 0.25rem;
 }
