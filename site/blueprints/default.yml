@@ -22,4 +22,13 @@ fields:
     type:  textarea
   style:
     label: Estilo
-    type:  text    
+    type:  text
+  action:
+    label: Call to Action
+    type:  toggle
+  actionText:
+    label: Call to Action text
+    type:  text
+  actionUrl:
+    label: Call to Action URL
+    type:  url

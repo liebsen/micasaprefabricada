@@ -152,7 +152,7 @@
         </a>
         <?php endif;?>
         <?php endforeach;?>
-        <?php foreach(page('socials')->children() as $social): ?>
+        <?php foreach(page('socials')->children()->visible() as $social): ?>
         <a href="<?= $social->action()->value() ? $social->action() . ':' : '' ?><?= $social->link() ?>" class="icon style1 <?= $social->icon() ?>" target="_blank"><span class="label"><?= $social->title() ?></span></a>
         <?php endforeach ?>
         <?php if(page('home')->action()->value()):?>
