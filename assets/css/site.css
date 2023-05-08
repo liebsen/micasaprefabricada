@@ -258,8 +258,9 @@ body.hidden {
     padding: 4rem;
     padding-top: 0;
   }
-  .spotlight.style1 {
+  .spotlight.style1:not(:first-child) {
     min-height: 100vh;
+    margin: 6rem 0;
   }
   .spotlight.orient-right .image, .spotlight.orient-right .image img {
     border-top-right-radius: 2rem;

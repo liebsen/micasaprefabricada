@@ -4,6 +4,7 @@
   <title><?php snippet('pagetitle') ?></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="manifest" href="/manifest.json">
   <meta name="description" content="<?= $site->text() ?>"/>
   <meta property="og:type" content="<?= $site->ogtype() ?>" />
   <meta property="og:title" content="<?= $site->ogtitle() ?>" />
