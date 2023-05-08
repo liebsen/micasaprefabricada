@@ -9,6 +9,11 @@ files:
       label: Info
       type:  textarea
       buttons: false
+    position:
+      label: Position
+      type: select
+      options: ['center', 'top', 'left', 'right', 'bottom']
+      help: Fit image direction  
 
 fields:
   title:

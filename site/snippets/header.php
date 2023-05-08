@@ -13,8 +13,8 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="<?= $site->themecolor() ?>" />
   <meta name="theme-color" content="<?= $site->themecolor() ?>" />
-  <link rel="manifest" href="/manifest.json">
   <link href="https://fonts.googleapis.com/css?family=<?= $site->fontfamily() ?: '' ?>:<?= $site->fontweight() ?: '' ?>" rel="stylesheet">
+
   <link rel="shortcut icon" type="image/png" href="<?= $site->favicon()->toFile()->url() ?>" />
   <link rel="stylesheet" href="/assets/css/main.css" />
   <link rel="stylesheet" href="/assets/css/site.css" />
@@ -46,7 +46,7 @@
     }
 
     .loader-background {
-      opacity: 1;
+      opacity: 0.1;
       background-size: 220px;
       background-repeat: no-repeat;
       background-position: center center;
@@ -63,15 +63,14 @@
 
     @keyframes loaderIn {
       0% {
-        opacity: 1;
+        opacity: 0.1;
       }
       50% {
-        opacity: 0.75;
-        transform: scale(0.75);
+        opacity: 0.25;
       }
       100% {
-        opacity: 0;
-        transform: scale(0.5);
+        opacity: 0.9;
+        transform: scale(0.75);
       }
     }
 
@@ -131,30 +130,36 @@
       </div>
     </div>
   </div>
-  <div class="overlay" style="<?= $site->stylemenu()->value() ? : '' ?>">
-    <div class="overlay-content" style="background-image: url(<?= $site->backgroundmenu()->value() ? $site->backgroundmenu()->toFile()->url() : '' ; ?>)">
-      <a class="close toggle-menu">
-        <img class="is-clickable" src="/assets/images/vector-29@2x.svg" width="30" />
-      </a>
-      <a href="/">
-        <img class="logo fadeIn delay" src="<?= $site->logomenu()->value() ? $site->logomenu()->toFile()->url() : '' ?>" width="280" />
-      </a>
-      <?php foreach($site->children()->visible() as $section):?>
-      <?php if ($section->header()->value() === 'true'):?>
-      <a class="fadeIn" href="/<?= $section->slug() ?>">
-        <?= $section->title() ?>
-      </a>
-      <?php endif;?>
-      <?php endforeach;?>      
-    </div>
-  </div>
   <div class="header">
-    <div class="align-left">
-      <a href="<?= $page->slug() !== 'home' ? '/' : '#home' ?>">
-        <img class="logo" src="<?= $site->logo()->value() ? $site->logo()->toFile()->url() : '' ?>" width="200" />
-      </a>
+    <a href="<?= $page->slug() !== 'home' ? '/' : '#home' ?>">
+      <img class="logo" src="<?= $site->logo()->value() ? $site->logo()->toFile()->url() : '' ?>" width="200" />
+    </a>
+    <div class="overlay desktop" style="<?= $site->stylemenu()->value() ? : '' ?>">
+      <div class="overlay-content" style="background-image: url(<?= $site->backgroundmenu()->value() ? $site->backgroundmenu()->toFile()->url() : '' ; ?>)">
+        <div class="overlay-tools">
+          <a class="close toggle-menu">
+            <img class="is-clickable" src="/assets/images/vector-29@2x.svg" width="30" />
+          </a>
+          <a href="/">
+            <img class="logo animated fadeIn delay" src="<?= $site->logomenu()->value() ? $site->logomenu()->toFile()->url() : '' ?>" width="280" />
+          </a>
+        </div>
+        <div class="menu-options animated fadeIn delay2">
+        <?php foreach($site->children()->visible() as $section):?>
+        <?php if ($section->header()->value() === 'true'):?>
+        <a class="fadeIn" href="/<?= $section->slug() ?>">
+          <?= $section->title() ?>
+        </a>
+        <?php endif;?>
+        <?php endforeach;?>
+        <?php foreach(page('socials')->children() as $social): ?>
+        <a href="<?= $social->action()->value() ? $social->action() . ':' : '' ?><?= $social->link() ?>" class="icon style1 <?= $social->icon() ?>" target="_blank"><span class="label"><?= $social->title() ?></span></a>
+        <?php endforeach ?>
+        <?php if(page('home')->action()->value()):?>
+          <a href="<?= page('home')->actionUrl() ?>" class="button primary small"><?= page('home')->actionText() ?></a>
+        <?php endif ?>
+        </div> 
+      </div>
     </div>
-    <div class="align-right">
-      <img class="toggle-menu is-clickable" src="/assets/images/vector-20@2x.svg" width="30"/>
-    </div>    
+    <img class="mobile toggle-menu is-clickable" src="/assets/images/vector-20@2x.svg" width="30"/>
   </div>

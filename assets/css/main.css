@@ -4969,6 +4969,9 @@ input, select, textarea {
 
 			.spotlight.style1 .content {
 				width: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: flex-end;				
 			}
 
 			.spotlight.style1 .image {

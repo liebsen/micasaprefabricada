@@ -8,6 +8,11 @@ files:
     caption:
       label: Info
       type:  textarea
+    position:
+      label: Position
+      type: select
+      options: ['center', 'top', 'left', 'right', 'bottom']
+      help: Fit image direction  
 fields:
   title:
     label: Título
