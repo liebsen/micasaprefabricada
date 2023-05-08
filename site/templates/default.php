@@ -1,8 +1,8 @@
 <?php $positions = ['center','top','left','right','bottom']; ?>
 <?php snippet('header') ?>
   <div id="wrapper">
-    <section class="spotlight style1 content-white orient-left content-align-left background-image fullscreen onload-image-fade-in onload-content-fade-right" id="home" style="background-image:url(<?= $page->files()->first() ? $page->files()->first()->url() : ''; ?>); background-position: <?= $page->files()->first() ? "center {$positions[intval($page->files()->first()->position()->value())]}" : 'center'; ?>">
-      <div class="content">
+    <section class="spotlight style1 content-white justify-content-start orient-left content-align-left background-image fullscreen onload-image-fade-in onload-content-fade-right" id="home" style="background-image:url(<?= $page->files()->first() ? $page->files()->first()->url() : ''; ?>); background-position: <?= $page->files()->first() ? "center {$positions[intval($page->files()->first()->position()->value())]}" : 'center'; ?>">
+      <div class="content mw-10">
         <div class="anchor" name="home"></div>
         <h1 class="text-white"><?php echo $page->title()->html() ?></h1>
         <p class="text-white text-hili"><?= $page->text() ?></p>
@@ -15,8 +15,8 @@
 
     <section id="modelos" class="spotlight style1 orient-left content-align-center image-position-center onscroll-image-fade-in onscroll-content-fade-left">
       <div class="anchor" name="modelos"></div>
-      <div class="content">
-        <h1 class="text-white"><?php echo $site->find('/modelos')->title() ?></h1>
+      <div class="content margin-auto">
+        <h1><?php echo $site->find('/modelos')->title() ?></h1>
         <p class="text-light text-hili"><?php echo $site->find('/modelos')->intro() ?></p>
         <ul class="actions stacked">
           <li><a href="/modelos" class="button large wide smooth-scroll-middle">Más de nuestros modelos</a></li>
@@ -54,7 +54,7 @@
 
     <?php $i=0; foreach($site->children()->visible() as $section):?>
       <?php if ($section->home()->value() === 'true'):?>
-      <section class="spotlight style1 orient-<?= intval($i%2) == 0 ? 'right' : 'left' ?> content-align-left image-position-center onscroll-image-fade-in onscroll-content-fade-<?= intval($i%2) == 0 ? 'right' : 'left' ?>" id="<?= $section->slug() ?>">        
+      <section class="spotlight style1 orient-<?= intval($i%2) == 0 ? 'right' : 'left' ?> content-align-left image-position-center onscroll-image-fade-<?= intval($i%2) == 0 ? 'right' : 'left' ?> onscroll-content-fade-<?= intval($i%2) == 0 ? 'right' : 'left' ?>" id="<?= $section->slug() ?>">        
         <div class="content">
           <div class="anchor" name="<?= $section->slug() ?>"></div>
           <h1><?= $section->title() ?></h1>

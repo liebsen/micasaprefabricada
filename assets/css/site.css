@@ -128,11 +128,23 @@ body.hidden {
   border-color: var(--theme-dark-color);
 }
 
+.justify-content-start {
+  justify-content: flex-start!important;
+}
+
+.margin-auto {
+  margin: auto!important;
+}
+
+.mw-10 {
+  max-width: 30rem!important;
+}
+
 .bg-theme {
   background-color: var(--theme-dark-color);
 }
 .bg-light {
-  background-color: #f8f8f8;  
+  background-color: #ebebeb;
 }
 
 .desktop {
